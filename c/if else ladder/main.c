@@ -18,9 +18,23 @@ int main()
     {
         printf("\n%d is a positive odd number.",num);
     }
-    else
+
+    else if(num % 2 !=0 && num <0)
     {
         printf("\n%d is a negative odd number.\n",num);
+    }
+    else
+    {
+        printf("Not a number jackass.");
+    }
+
+    switch (num):
+    {
+        case 1:
+            break;
+        case 2:
+            break;
+
     }
     return 0;
 }
