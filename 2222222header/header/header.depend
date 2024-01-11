@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1705001122 source:c:\users\user\desktop\c++\2222222header\header\add.cpp
+
+1705001050 source:c:\users\user\desktop\c++\2222222header\header\main.cpp
+	<iostream>
+	"add.h"
+
+1705001197 c:\users\user\desktop\c++\2222222header\header\add.h
+

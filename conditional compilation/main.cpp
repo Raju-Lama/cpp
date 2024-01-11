@@ -23,5 +23,10 @@ int main()
     *
     */
 #endif // 0
+
+#if 1
+    std::cout << "These lines are now printed as it is used to test codes by compiling.\n";
+    std::cout << "The lines are executable and included for compilation. \n";
+#endif // 1
     return 0;
 }
