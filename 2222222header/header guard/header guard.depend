@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1705087083 source:c:\users\user\desktop\c++\2222222header\header guard\main.cpp
+	<iostream>
+	"add.h"
+
+1705086856 source:c:\users\user\desktop\c++\2222222header\header guard\add.cpp
+
+1705087266 c:\users\user\desktop\c++\2222222header\header guard\add.h
+
