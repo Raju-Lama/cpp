@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1705492987 source:c:\users\user\desktop\c++\palindrome number\palindrome.cpp
+
+1705492753 source:c:\users\user\desktop\c++\palindrome number\input.cpp
+	<iostream>
+
+1705492990 source:c:\users\user\desktop\c++\palindrome number\main.cpp
+	<iostream>
+
