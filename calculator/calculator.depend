@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1706643392 source:c:\users\user\desktop\c++\calculator\input.cpp
+	<iostream>
+
+1706640566 source:c:\users\user\desktop\c++\calculator\operation.cpp
+
+1706643179 source:c:\users\user\desktop\c++\calculator\main.cpp
+	<iostream>
+
