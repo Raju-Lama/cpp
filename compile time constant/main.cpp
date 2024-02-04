@@ -7,8 +7,9 @@ constexpr int greater(int x, int y)
 
 int main()
 {
-    int x{greater(5, 6)};//this becomes a compile time constant now.
-    std::cout << x << " is greater!" << '\n';
-    int y{5};//compile time constant, or run time
+    constexpr int x{5};
+    constexpr int y{6};
+    constexpr int g {greater(x, y)};//this becomes a compile time constant now.
+    std::cout << g << " is greater!" << '\n';
     return 0;
 }
