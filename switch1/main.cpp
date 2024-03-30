@@ -3,9 +3,14 @@ int swit(int);
 int main()
 {
     std::cout << "Enter a number from 1 to 10 :: ";
+
     int x{};
+
     std::cin >> x;
-    std::cout << "You entered " + swit(x);
+
+    std::cout << "You entered ";
+    std::cout << swit(x);
+
     return 0;
 }
 int swit(int x)
