@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1712248443 source:c:\users\user\desktop\c++\mersense twister with range\main.cpp
+	<iostream>
+	<random>
+
