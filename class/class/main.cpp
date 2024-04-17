@@ -16,7 +16,7 @@ public:
 int main()
 {
     Person p;
-    p.x = 5;//cannot do this
+    //p.x = 5;//cannot do this
     p.print();
 
     return 0;
