@@ -26,15 +26,16 @@ public:
     }
         void print(const Dude& dude)
         {
-            std::cout << dude::m_id << '\n' ;
+            std::cout << dude.m_id << '\n' ;
         }
 };
+
 int main()
 {
     Dude boy{2};
     Gal girl{3};
 
-    Gal::print(boy);
+     girl.print(boy);//prints 2
 
     return 0;
 }
