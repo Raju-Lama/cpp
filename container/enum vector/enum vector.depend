@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1714400309 source:c:\users\user\desktop\c++\container\enum vector\main.cpp
+	<iostream>
+	<vector>
+
