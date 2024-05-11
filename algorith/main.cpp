@@ -19,13 +19,14 @@ int main()
 
     if(found == arr.end())
     {
-        std::cout << "Could not find!" << search << '\n' ;
+        std::cout << "Could not find!"  << '\n' ;
     }
     else
     {
         *found = replace;
     }
 
+    std::cout << "Your list :: ";
     for(auto lis : arr)
     {
         std::cout << lis << '\t';
