@@ -1,9 +1,19 @@
 #include <iostream>
+#include <string>
+class fruit
+{
+public:
+    std::string m_shape{};
+};
 
-using namespace std;
+class type : public fruit
+{
 
+};
 int main()
 {
-    cout << "Hello world!" << endl;
+    type apple{};
+    apple.m_shape = "round";
+    std::cout << apple.m_shape;
     return 0;
 }
