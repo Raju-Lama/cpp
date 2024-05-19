@@ -13,8 +13,12 @@ class Child : protected Access
 public:
     Child()
     {
-        m_prot = {5};
+        m_prot = {5};//can do with protected
     }
+};
+class Privat : private Access
+{
+    //all the members, public, private, and protected of Access/base are now private
 };
 
 int main()
