@@ -31,10 +31,15 @@ public:
 class Derived : public Base1, public Base2
 {
 public:
-    Derived(int id, std::string_view& name)
-        :m_id{id}, m_name{name}
+
+    Derived(int id, std::string name)
+        :Base1{id}, Base2{name}
     {
     }
+    /*Derived(int id, std::string_view name)
+        :m_id{id}, m_name{name}
+    {
+    }*/
 
     /*int getId() const { return m_id; }
     const std::string& getName() const {return m_name; }
@@ -44,7 +49,8 @@ public:
 
 int main()
 {
-    Derived derived{"name", 3};
+    Derived derived{3, " idiots"};
     std::cout << derived.getId();
+    std::cout << derived.getName();
     return 0;
 }
