@@ -5,7 +5,7 @@
 const std::string& returnByReference()
 {
     static const std::string staticValue {"Hello "};//it gets destroyed only after the end of the program
-    return staticValue;
+    return staticValue;//only use static constant
 }
 
 int main()
