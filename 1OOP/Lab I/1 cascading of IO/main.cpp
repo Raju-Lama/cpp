@@ -1,6 +1,7 @@
-#include <iostream>
 //1. WAP to show cascading of I/O operators.
 //WAP = write a program
+
+#include <iostream>
 int main()
 {
     std::cout << "Enter integer values for a and b respectively :: ";
