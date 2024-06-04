@@ -15,11 +15,11 @@ print out the complete table including the averages.
 int main()
 {
     std::cout << std::left;
-    std::cout << std::setw(20) << "Player's Name";
+    std::cout << std::setw(20) << "Player's Name";//20 is the width of this category
     std::cout << std::setw(20) << "Runs";
     std::cout << std::setw(10) << "Innings" << std::endl;//total 50 width
 
-    std::cout << std::right;
+    std::cout << std::right;//you can do with left align too
 
     std::cout << std::setw(8) << "Sachin";
     std::cout << std::setw(16) << "12300";
@@ -31,8 +31,13 @@ int main()
 
     std::cout << std::setw(7) << "Rahul";
     std::cout << std::setw(17) << "8990";
-    std::cout << std::setw(20) << "134" << std::endl;
+    std::cout << std::setw(20) << "134" << std::endl << std::endl;
 
+    std::cout << std::left ;
+
+    std::cout << std::setw(20) << "Average";
+    std::cout << std::setw(20) << ( 12300 + 10000 + 8990 ) / 3;
+    std::cout << std::setw(10) << ( 200 + 130 + 134 ) / 3 << std::endl;
 
     return 0;
 }
