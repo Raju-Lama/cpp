@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1717701584 source:c:\users\user\desktop\c++\1oop\lab i\7 electricity bill\main.cpp
+	<iostream>
+	<string>
+	<iomanip>
+
