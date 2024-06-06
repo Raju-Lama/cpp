@@ -32,7 +32,7 @@ int main()
 
     if (unit > 300) charge += 100 * 0.6 + 200 * 0.8 + (unit - 300) * 0.9;
 
-    float total {charge + 50};
+    float total {charge + 50};//minumum 50 ruppees added
 
     if (total > 300) total += total * 0.15;//15% surcharge
 
@@ -40,7 +40,7 @@ int main()
 
     std::cout << std::left;
     std::cout << std::setw(20) << "Name" << std::setw(20) << "Units consumed";
-    std::cout << std::setw(20) << "Charge" << std::endl;
+    std::cout << std::setw(20) << "Charge (Rs)" << std::endl;
 
     std::cout << std::setw(20) << name << std::setw(20) << unit;
     std::cout << std::setw(20) << total << std::endl;
