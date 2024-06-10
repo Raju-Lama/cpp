@@ -15,15 +15,31 @@ number of units consumed and print out the charges with name.
 #include <string>
 #include <iomanip>
 
+class Users
+{
+public:
+    std::string m_name;
+    float m_unit{};
+};
+
 int main()
 {
-    std::cout << "Enter Full Name :: ";
-    std::string name{};
-    std::getline (std::cin, name);
+    Users* us{new Users};//dynamic memory allocation
 
-    std::cout << "Enter the units consumed :: ";
-    float unit{};
-    std::cin >> unit;
+    std::cout << "Enter the number of customers :: ";
+    int n;
+    std::cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        std::cout << "Enter Full Name :: ";
+        std::getline (std::cin, us[i].m_name);
+
+        std::cout << "Enter the units consumed :: ";
+        std::cin >> us[i].m_unit;
+
+    }
+    /*
 
     float charge{0};
     if (unit <= 100) charge += unit * 0.6;//60P per unit, converted into ruppee
@@ -44,7 +60,7 @@ int main()
 
     std::cout << std::setw(20) << name << std::setw(20) << unit;
     std::cout << std::setw(20) << total << std::endl;
-
+*/
 
     return 0;
 }
