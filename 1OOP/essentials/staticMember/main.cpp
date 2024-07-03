@@ -24,7 +24,7 @@ int Static::s_var{1};
 
 int main()
 {
-    Static::s_var = 2;
-    std::cout << Satic::s_var;
+    Static::s_var = 2;//preferred method of accessing static variables
+    std::cout << Static::s_var;
     return 0;
 }
