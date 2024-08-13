@@ -13,17 +13,19 @@ class COMPANY
     std::string E_name{};
     std::string E_address{};
     static int E_id;// if not constant , initialize out side class
-    int m_cou{0};
+    static int m_count;
 
 public:
     //void setData(std::string_view name, std::string address)
 
-    COMPANY(std::string name, std::string address)//constructor
+    COMPANY(std::string name, std::string address, int id)//constructor
         :E_name{name},
-        E_address{address}
+        E_address{address},
+        E_id {id}
     {
       //  E_name = name;
         //E_address = address;
+        ++m_count;
     }
 
     void getData()
@@ -35,15 +37,16 @@ public:
 
     static int Count_Employee()
     {
-       // m_cou += 1;
-        return m_cou;
+
+        return m_count;
     }
 };
 
-int COMPANY::E_id = 100; //should initialize outside the class because its private static member
+//COMPANY::E_id = 100; //should initialize outside the class because its private static member
+
 int main()
 {
-    COMPANY em1{"John Cena", "Patan"};
+    COMPANY em1{"John Cena", "Patan", 100};
     //em1.setData("John Cena", "Patan");
     em1.getData();
     em1.Count_Employee;
