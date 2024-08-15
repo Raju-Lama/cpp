@@ -7,6 +7,7 @@ functions to input, and show the data.
 Also, define a static member function Count_Employee() to count
 the total number of employees.
 */
+#include <iomanip>
 
 class COMPANY
 {
@@ -17,15 +18,29 @@ class COMPANY
 
 public:
     //void setData(std::string_view name, std::string address)
+    COMPANY()//default initializer,, when no arguments are passed
+    {
+    }
 
-    COMPANY(std::string name, std::string address, int id)//constructor
+    COMPANY(std::string name, std::string address)//constructor
         :E_name{name},
-        E_address{address},
-        E_id {id}
+        E_address{address}
+        //E_id {id}
     {
       //  E_name = name;
         //E_address = address;
+    }
+
+    void Count_Employee()//count number of employee
+    {
         ++m_count;
+        std::cout << "Count :: " << m_count << '\n' ;
+        //return m_count;
+    }
+
+    void IdIncrement()//id incrementer
+    {
+        ++E_id;
     }
 
     void getData()
@@ -33,28 +48,37 @@ public:
         std::cout << "Name :: " << E_name << '\n';
         std::cout << "Address :: " << E_address << '\n';
         std::cout << "Id :: " << E_id << '\n';
-    }
 
-    static int Count_Employee()
-    {
-
-        return m_count;
+        Count_Employee();
+        IdIncrement();
     }
 };
 
-//COMPANY::E_id = 100; //should initialize outside the class because its private static member
+int COMPANY::E_id = 100; //should initialize outside the class because its private static member
+//explicit definition outside the class
+//for first employee its default
+
+int COMPANY::m_count = 0;//explicit definition outside the class best practice
+
 
 int main()
 {
-    COMPANY em1{"John Cena", "Patan", 100};
+    COMPANY em1{"John Cena", "Patan"};
     //em1.setData("John Cena", "Patan");
     em1.getData();
-    em1.Count_Employee;
+    //std::right;
+    std::cout << std::setw(5) << "---" << std::setw(5) << "---" << std::setw(5) << "---" << '\n';
 
     COMPANY em2{"Under Taker", "Swoyambhu"};
     em2.getData();
+    std::cout << std::setw(5) << "---" << std::setw(5) << "---" << std::setw(5) << "---" << '\n';
+    //COMPANY counter;
+    //std::cout << "Number of employees :: " << counter.m_count;
+    COMPANY em3{"Petu", "Kathmandu"};
+    em3.getData();
+    std::cout << std::setw(5) << "---" << std::setw(5) << "---" << std::setw(5) << "---" << '\n';
 
-    std::cout << em2.Count_Employee;
+
 
     return 0;
 }
