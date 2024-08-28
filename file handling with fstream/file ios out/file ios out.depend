@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724612533 source:c:\users\h9\desktop\cpp\file handling with fstream\file ios out\main.cpp
+	<iostream>
+	<fstream>
+
