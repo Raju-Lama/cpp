@@ -17,7 +17,7 @@ public:
     {
     }
 
-    int getReal()
+    /*int getReal()
     {
         return real;
     }
@@ -25,12 +25,12 @@ public:
     {
         return imag;
     }
+    */
 
-    Complex display()
+    void display()
     {
-        Complex c;
-        std::cout << c.real << '+' << c.imag << 'i';
-        return c;
+
+        std::cout << real << '+' << imag << 'i';
     }
 
     friend Complex sumImaginaryNumber(Complex& firstComplex, Complex& secondComplex);
@@ -50,7 +50,14 @@ int main()
     Complex complexTwo{2, 3};
     Complex sum{sumImaginaryNumber(complexOne, complexTwo)};
 
-    std::cout << complexOne.display();
+    //sum.display();
     //std::cout << "The sum of " << complexOne.getReal() << "+" << complexOne.getImag() << "i and " << complexTwo.getReal() << "+" << complexTwo.getImag() << "i is :: " << sum.getReal() << "+" << sum.getImag() << 'i';
+
+    std::cout << "The sum of ";
+    complexOne.display();
+    std::cout << " and ";
+    complexTwo.display();
+    std::cout << " is " ;
+    sum.display();
     return 0;
 }
