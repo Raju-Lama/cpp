@@ -1,9 +1,14 @@
 #include <iostream>
 
-using namespace std;
+//1. WAP to convert built-in type to user defined type i.e., class type.
+
+class Classtype
+{
+
+};
 
 int main()
 {
-    cout << "Hello world!" << endl;
+
     return 0;
 }
