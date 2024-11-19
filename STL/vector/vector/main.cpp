@@ -25,5 +25,23 @@ int main()
         std::cout << i << " ";
     }
 
+    //access first element with front() method
+    std::cout << std::endl << prime_numbers.front() << std::endl;
+
+    //access the last element with back() method
+    std::cout << prime_numbers.back() << std::endl;
+
+    //access the element at certain location with its index with at() method
+
+    std::cout << prime_numbers.at(3) << std::endl;
+
+    //modify elements with at()
+
+    prime_numbers.at(1) = 5;
+    std::cout << prime_numbers.at(1) << '\n';
+
+    //remove last element with pop_back
+    prime_numbers.pop_back();
+
     return 0;
 }
