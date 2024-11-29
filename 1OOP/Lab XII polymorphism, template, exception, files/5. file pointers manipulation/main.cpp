@@ -32,15 +32,28 @@ int main()
     file << "Bye Bye!";
 
     int current_position = file.tellp();
-    std::cout << "Current position : " << current_position << '\n';
+    std::cout << "Current write position : " << current_position << '\n';
 
+    file.seekp(0, std::ios::end);
     file << "Oh! Wait!";
     //put something in the first location with seekp(0)
-    file.seekp(0);
+    file.seekp(20, std::ios::beg);
     file << "Hakuna Matata!";
 
     file.close();
 
+    std::ifstream read_file{"newfile.txt"};
+    while(read_file.eof())
+    {
+        std::cout << "Read position : " << read_file.tellg() << '\n';
+    }
+
+    read_file.seekg(5, std::ios::cur);
+    //current position
+
+    int current_read_position = read_file.tellg();
+    std::cout << "Current read position : " << current_read_position << '\n';
+    read_file.close();
 
     return 0;
 }

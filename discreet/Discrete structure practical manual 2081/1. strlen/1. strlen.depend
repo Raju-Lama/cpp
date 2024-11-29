@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1723383807 source:c:\users\h9\desktop\cpp\discreet\discrete structure practical manual 2081\1. strlen\main.cpp
+	<iostream>
+	<string>
+	<cstring>
+

@@ -1,0 +1,3 @@
+Roll : 101
+Name : raju lama
+Fee : 55000
