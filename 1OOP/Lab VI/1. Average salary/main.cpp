@@ -34,7 +34,7 @@ public:
 double average(Employee* tm)
 {
     double sum{0};
-    for(int i{0}; i < 10; ++i)
+    for(int i{0}; i < 2; ++i)
     {
         sum += tm[i].
         m_salary;
@@ -44,14 +44,14 @@ double average(Employee* tm)
 
 int main()
 {
-    Employee* em = new Employee[10];
+    Employee* em = new Employee[2];
 
-    for(int i{0}; i < 10; ++i)
+    for(int i{0}; i < 2; ++i)
     {
         em->setDetails();
     }
 
-    for(int i{0}; i < 10; ++i)
+    for(int i{0}; i < 2; ++i)
     {
         em->getDetails();
     }

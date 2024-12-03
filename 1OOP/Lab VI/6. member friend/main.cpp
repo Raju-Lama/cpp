@@ -1,5 +1,5 @@
 #include <iostream>
-//1.	WAP that makes member function of one class friend function of another class.
+//6.	WAP that makes member function of one class friend function of another class.
 
 class Greet;
 

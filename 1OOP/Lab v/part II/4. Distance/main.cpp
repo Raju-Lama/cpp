@@ -10,7 +10,7 @@ class Distance
 private:
     float m_inch{};
     float m_feet{}; // 1 inch = 0.8333333
-    float m_total{m_inch + m_feet})
+    float m_total{m_inch + m_feet};
 
 public:
     void setData(float inch, float feet)
@@ -26,11 +26,11 @@ public:
 
     void Maximum(Distance x, Distance y, Distance z)
     {
-        if (x.m_total > y.m_total) && (x.m_total > z.m_total)
+        if ((x.m_total > y.m_total) && (x.m_total > z.m_total))
         {
             std::cout << x.m_total << " is the Greatest!\n";
         }
-        else if (y.m_total > x.m_total) && (y.m_total > z.m_total)
+        else if ((y.m_total > x.m_total) && (y.m_total > z.m_total))
         {
             std::cout << y.m_total << " is the Greatest!\n";
         }
@@ -42,7 +42,8 @@ public:
 };
 int main()
 {
-    Distance ob1{}, ob2{}, ob3{};
+    Distance ob1{}, ob2, ob3;
+
 
     return 0;
 }
