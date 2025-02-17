@@ -78,7 +78,7 @@ int main()
 {
     LinkedList nodes;
     nodes.createList();
-    nodes.traverseBackward();
+    nodes.traverseForward();
     nodes.traverseBackward();
 
     return 0;
