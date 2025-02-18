@@ -40,6 +40,10 @@ public:
             delete top_node;
             std::cout << "Stack Pop() operation!\n";
         }
+        else
+        {
+            std::cout << "Stack is Empty!";
+        }
     }
 
     void top()
